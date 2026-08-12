@@ -1,0 +1,250 @@
+.service-details {
+    padding: 120px 0 80px;
+    background: var(--light);
+}
+
+.service-details > .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.service-detail {
+    margin-bottom: 70px;
+    padding: 45px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.service-detail:last-child {
+    margin-bottom: 0;
+}
+
+.service-detail-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.service-detail-icon {
+    width: 68px;
+    height: 68px;
+    display: grid;
+    place-items: center;
+    color: var(--primary);
+    background: #ecfdf5;
+    border-radius: 50%;
+}
+
+.service-detail-icon i {
+    font-size: 27px;
+}
+
+.service-detail-number {
+    color: var(--secondary);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.service-detail h1 {
+    margin: 0 0 18px;
+    color: var(--dark);
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.15;
+}
+
+.service-detail-description {
+    max-width: 760px;
+    margin: 0 0 30px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+.service-detail-list {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin: 0 0 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.service-detail-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: var(--dark);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.service-detail-list li i {
+    flex-shrink: 0;
+    margin-top: 4px;
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.service-detail-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.service-detail-actions .btn {
+    min-height: 48px;
+    padding: 12px 20px;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--white);
+    background: #16a34a;
+    border: 1px solid #16a34a;
+}
+
+.whatsapp-btn:hover {
+    color: var(--white);
+    background: #15803d;
+    border-color: #15803d;
+    transform: translateY(-2px);
+}
+
+.key-benefits {
+    margin-top: 38px;
+    padding: 28px;
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+}
+
+.key-benefits h2 {
+    margin: 0 0 20px;
+    color: var(--dark);
+    font-size: 20px;
+}
+
+.key-benefits ul {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.key-benefits li {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.key-benefits li i {
+    flex-shrink: 0;
+    margin-top: 4px;
+    color: var(--primary);
+    font-size: 13px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 700px) {
+
+    .service-details {
+        padding: 105px 0 60px;
+    }
+
+    .service-detail {
+        margin-bottom: 45px;
+        padding: 28px 22px;
+        border-radius: 18px;
+    }
+
+    .service-detail-top {
+        margin-bottom: 23px;
+    }
+
+    .service-detail-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .service-detail-icon i {
+        font-size: 23px;
+    }
+
+    .service-detail h1 {
+        font-size: 2rem;
+    }
+
+    .service-detail-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .service-detail-list li {
+        font-size: 14px;
+    }
+
+    .service-detail-actions {
+        flex-direction: column;
+    }
+
+    .service-detail-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .key-benefits {
+        padding: 22px 19px;
+    }
+
+    .key-benefits h2 {
+        font-size: 18px;
+    }
+
+}
+
+
+/* Small Phones */
+
+@media (max-width: 400px) {
+
+    .service-details {
+        padding-top: 100px;
+    }
+
+    .service-detail {
+        padding: 25px 18px;
+    }
+
+    .service-detail h1 {
+        font-size: 1.8rem;
+    }
+
+    .service-detail-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .service-detail-icon i {
+        font-size: 21px;
+    }
+
+    .service-detail-number {
+        font-size: 13px;
+    }
+
+}

@@ -1,0 +1,497 @@
+.partnership-page {
+    padding-top: 82px;
+}
+
+
+/* Hero */
+
+.partnership-hero {
+    padding: 90px 0 80px;
+    background: var(--light);
+}
+
+.partnership-hero-content {
+    max-width: 780px;
+}
+
+.partnership-hero .eyebrow {
+    color: var(--primary);
+}
+
+.partnership-hero h1 {
+    margin: 10px 0 18px;
+    color: var(--dark);
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    line-height: 1.1;
+}
+
+.partnership-hero h1 span {
+    display: block;
+    color: var(--primary);
+}
+
+.partnership-hero p {
+    max-width: 680px;
+    margin-bottom: 28px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.partnership-hero-buttons {
+    display: flex;
+    gap: 14px;
+}
+
+
+/* Benefits */
+
+.partnership-benefits {
+    background: var(--white);
+}
+
+.partnership-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.partnership-benefit-card {
+    padding: 30px 24px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: 0.3s ease;
+}
+
+.partnership-benefit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.1);
+}
+
+.partnership-benefit-icon {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+    background: #ecfdf5;
+    border-radius: 14px;
+}
+
+.partnership-benefit-icon i {
+    font-size: 22px;
+}
+
+.partnership-benefit-card h3 {
+    margin-bottom: 10px;
+    color: var(--dark);
+    font-size: 17px;
+}
+
+.partnership-benefit-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+
+/* Management System */
+
+.management-system {
+    background: var(--light);
+}
+
+.management-system-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.management-card {
+    position: relative;
+    min-height: 300px;
+    padding: 30px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: 0.3s ease;
+}
+
+.management-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.1);
+}
+
+.management-number {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: var(--secondary);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.management-icon {
+    width: 62px;
+    height: 62px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 24px;
+    color: var(--primary);
+    background: #ecfdf5;
+    border-radius: 15px;
+}
+
+.management-icon i {
+    font-size: 23px;
+}
+
+.management-card h3 {
+    margin-bottom: 12px;
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.35;
+}
+
+.management-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1050px) {
+
+    .partnership-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .management-system-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Management Team */
+
+.management-team {
+    background: var(--light);
+}
+
+.management-team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.team-card {
+    padding: 30px 24px;
+    text-align: center;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.1);
+}
+
+.team-avatar {
+    width: 78px;
+    height: 78px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 18px;
+    color: var(--white);
+    background: var(--gradient);
+    border-radius: 50%;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.team-card h3 {
+    margin-bottom: 5px;
+    color: var(--dark);
+    font-size: 17px;
+}
+
+.team-role {
+    display: block;
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.team-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+
+/* Partnership Opportunities */
+
+.partnership-opportunities {
+    background: var(--white);
+}
+
+.partnership-opportunities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.partnership-opportunities-content h2 {
+    margin-bottom: 18px;
+    color: var(--dark);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    line-height: 1.15;
+}
+
+.partnership-opportunities-content h2 span {
+    color: var(--primary);
+}
+
+.partnership-opportunities-content p {
+    margin-bottom: 15px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.partnership-opportunities-content .btn {
+    margin-top: 15px;
+}
+
+.partnership-types {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.partnership-type {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 75px;
+    padding: 15px 18px;
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.partnership-type:hover {
+    transform: translateY(-3px);
+    border-color: rgba(34, 197, 94, 0.4);
+}
+
+.partnership-type-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    color: var(--primary);
+    background: var(--white);
+    border-radius: 10px;
+}
+
+.partnership-type-icon i {
+    font-size: 17px;
+}
+
+.partnership-type span {
+    color: var(--dark);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* CTA */
+
+.partnership-cta {
+    padding: 90px 0;
+    color: var(--white);
+    background: var(--gradient);
+}
+
+.partnership-cta-content {
+    max-width: 720px;
+    margin: auto;
+    text-align: center;
+}
+
+.partnership-cta .eyebrow {
+    color: #bbf7d0;
+}
+
+.partnership-cta h2 {
+    margin-bottom: 15px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.15;
+}
+
+.partnership-cta h2 span {
+    color: #dcfce7;
+}
+
+.partnership-cta p {
+    max-width: 600px;
+    margin: 0 auto 28px;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .partnership-hero {
+        padding: 70px 0;
+    }
+
+    .partnership-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .management-system-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .management-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partnership-opportunities-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 600px) {
+
+    .partnership-page {
+        padding-top: 82px;
+    }
+
+    .partnership-hero {
+        padding: 60px 0;
+    }
+
+    .partnership-hero h1 {
+        font-size: 2.35rem;
+    }
+
+    .partnership-hero p {
+        font-size: 14px;
+    }
+
+    .partnership-hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .partnership-hero-buttons .btn {
+        width: 100%;
+    }
+
+    .partnership-benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .partnership-benefit-card {
+        padding: 26px 22px;
+    }
+
+    .management-system-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .management-card {
+        min-height: auto;
+        padding: 28px 22px;
+    }
+
+    .management-team-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .team-card {
+        padding: 28px 22px;
+    }
+
+    .partnership-opportunities-grid {
+        gap: 35px;
+    }
+
+    .partnership-types {
+        grid-template-columns: 1fr;
+    }
+
+    .partnership-type {
+        min-height: 68px;
+    }
+
+    .partnership-cta {
+        padding: 70px 0;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+    }
+
+}
+
+
+/* Extra Small Phones */
+
+@media (max-width: 400px) {
+
+    .partnership-hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .partnership-benefit-card,
+    .management-card,
+    .team-card {
+        padding: 24px 19px;
+    }
+
+    .partnership-opportunities-content h2 {
+        font-size: 2rem;
+    }
+
+}
